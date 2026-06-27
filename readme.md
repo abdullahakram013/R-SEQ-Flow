@@ -40,8 +40,8 @@
 ---
 
 
+## Prerequisites
 
-<h2><a id="prerequisites"></a>Prerequisites</h2>
 
 Before running **R-SEQ-Flow**, ensure the following software is installed on your system.
 
@@ -106,7 +106,7 @@ Experiment name : ASTHMA_EXPERIMENT
 CONTROL SRA ID(s)  : SRR1039508 SRR1039512 SRR1039516
 TREATED SRA ID(s)  : SRR1039509 SRR1039513 SRR1039517
 
-[Processing 11 steps automatically...]
+[Processing 11 steps ...]
 
 Continue to DESeq2 analysis? (yes/no): yes
 ```
@@ -166,7 +166,7 @@ ASTHMA_EXPERIMENT/
 
 ---
 
-## 🔄 Smart Caching & Resumability
+##  Smart Caching & Resumability
 
 ### 3-Level Cache Architecture
 
@@ -230,7 +230,7 @@ SHARED_DIR="/path/to/shared"  # Adjust to your system
 
 ---
 
-## 📥 Input Format
+##  Input Format
 
 **SRA IDs**: Space-separated NCBI SRA run identifiers  
 Example: `SRR1039508 SRR1039512 SRR1039516`
