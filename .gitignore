@@ -1,0 +1,118 @@
+#############################################
+# R / RStudio
+#############################################
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
+
+#############################################
+# R packages / cache
+#############################################
+.Rproj.user
+renv/
+packrat/
+
+#############################################
+# Python (if any future modules added)
+#############################################
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env/
+venv/
+ENV/
+
+#############################################
+# Linux / Windows / Mac system files
+#############################################
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+#############################################
+# RNA-seq RAW DATA (VERY IMPORTANT)
+#############################################
+*.fastq
+*.fq
+*.fastq.gz
+*.fq.gz
+
+*.fasta
+*.fa
+*.fna
+
+*.sra
+
+#############################################
+# Alignment / Quantification outputs
+#############################################
+*.bam
+*.sam
+*.bai
+*.bed
+
+kallisto_output/
+salmon_output/
+star_output/
+hisat2_output/
+
+#############################################
+# QC outputs
+#############################################
+fastqc_results/
+qc_results/
+multiqc_report.html
+multiqc_data/
+
+#############################################
+# Trimming outputs
+#############################################
+trimmed_data/
+*trimmed*.fastq
+*trimmed*.fq
+
+#############################################
+# DESeq2 / Differential Expression outputs
+#############################################
+deseq2_results/
+DE_results/
+*.csv
+*.tsv
+*.rds
+
+#############################################
+# Logs
+#############################################
+logs/
+*.log
+
+#############################################
+# Large intermediate files
+#############################################
+intermediate/
+tmp/
+temp/
+cache/
+
+#############################################
+# Figures (optional — uncomment if needed)
+#############################################
+# *.png
+# *.pdf
+# *.jpg
+# *.jpeg
+# *.svg
+
+#############################################
+# Sensitive / local config
+#############################################
+config/local*
+*.env
+
+#############################################
+# Git artifacts
+#############################################
+.gitignore.swp
