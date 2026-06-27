@@ -12,7 +12,7 @@
 
 ## 📋 Overview
 
-**R-SEQ-Flow** is a complete, **production-ready RNA-seq processing pipeline** that automates the entire workflow from raw sequencing reads (NCBI SRA) to differential expression analysis.
+**R-SEQ-Flow** is a complete, **production-ready RNA-seq processing pipeline** that automates the entire workflow from raw sequencing reads (NCBI SRA) to differential expression analysis and results visualization.
 
 ### What It Does
 
@@ -59,7 +59,7 @@ Before running **R-SEQ-Flow**, ensure the following software is installed on you
 
 - SRA Toolkit
 - FastQC
-- Trimmomatic
+- Fastp
 - Kallisto
 
 ### Required R Packages
@@ -79,7 +79,7 @@ Before running **R-SEQ-Flow**, ensure the following software is installed on you
 - 8 GB RAM minimum (16 GB recommended)
 - At least 20 GB of free disk space
 
-### Installation (2 minutes)
+### Installation 
 
 ```bash
 # 1. Clone repository
@@ -95,7 +95,7 @@ chmod +x R-seq.sh deseq2_analysis.R
 
 ---
 
-## 📖 Usage Example
+## Case Study: RNA-seq Differential Expression Analysis (ASTHMA Dataset)
 
 ### ASTHMA Study (6 samples)
 
@@ -177,7 +177,7 @@ ASTHMA_EXPERIMENT/
 ### Crash Recovery
 
 ```bash
-# If pipeline crashes at Step 10:
+# If pipeline crashes at any Step :
 ./R-seq.sh
 # Enter same experiment name + SRA IDs
 # Pipeline skips all completed steps (1-9), resumes at Step 10
@@ -194,7 +194,7 @@ SHARED/
 
 ---
 
-## 📊 Real Example Results
+## Case Study Results
 
 **Study**: Airway smooth muscle cells ± dexamethasone  
 **Samples**: 3 control + 3 treated (paired-end, 75bp)  
@@ -217,7 +217,7 @@ HSPA1A         +2.89      73          Heat shock protein 70
 
 ---
 
-## 🛠️ Configuration
+## Configuration
 
 
 ```bash
@@ -246,7 +246,7 @@ SRR1039509      treated      /experiment/kallisto_output/SRR1039509/abundance.ts
 
 ---
 
-## 📤 Output Interpretation
+## Output Interpretation
 
 ### CSV Files
 
@@ -268,7 +268,7 @@ ENSG00000030582,DUSP1,2145.3,3.45,0.142,1.2e-130,2.1e-89
 
 ---
 
-## 📚 Methods
+## Methods
 
 **Quantification**: Kallisto v0.48+ (pseudoalignment)  
 **Reference**: GENCODE v29 human transcriptome  
@@ -279,7 +279,7 @@ ENSG00000030582,DUSP1,2145.3,3.45,0.142,1.2e-130,2.1e-89
 
 ---
 
-## 📖 Full Documentation
+## Full Documentation
 
 - **[INSTALLATION.md](docs/INSTALLATION.md)** — Detailed setup for all OS
 - **[USAGE.md](docs/USAGE.md)** — Complete examples and customization
@@ -290,14 +290,14 @@ ENSG00000030582,DUSP1,2145.3,3.45,0.142,1.2e-130,2.1e-89
 
 
 
-## 📄 License
+## License
 
 **MIT License** — Free for commercial and non-commercial use with attribution.  
 See [LICENSE](LICENSE) file for full details.
 
 ---
 
-## 👤 Author
+## Author
 
 **Abdullah Akram**  
 Bioinformatician | GCU Faisalabad | 
@@ -307,7 +307,7 @@ Bioinformatician | GCU Faisalabad |
 
 ---
 
-## 🔗 Related Resources
+## Related Resources
 
 - [NCBI SRA](https://www.ncbi.nlm.nih.gov/sra)
 - [GENCODE](https://www.gencodegenes.org/)
@@ -317,5 +317,5 @@ Bioinformatician | GCU Faisalabad |
 
 ---
 
-**⭐ If helpful, please star the repository!**
+
 
