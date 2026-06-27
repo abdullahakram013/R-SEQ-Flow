@@ -201,6 +201,7 @@ SHARED/
 **Runtime**: ~90 minutes (first run), ~2 minutes (resume)
 
 ```
+Total genes in reference:       58,721
 Total genes quantified:         17,450
 Significantly DE genes (padj<0.05): 1,189
   Up-regulated (LFC > 1):         259
