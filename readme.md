@@ -28,7 +28,7 @@
 
 ---
 
-## 📋 Overview
+##Overview
 
 **R-SEQ-Flow** is a complete, **production-ready RNA-seq processing pipeline** that automates the entire workflow from raw sequencing reads (NCBI SRA) to differential expression analysis and results visualization.
 
@@ -42,7 +42,7 @@
 - **Resumable Execution**: Automatic checkpoint system—crash and resume without redundant re-processing
 - **Shared Reference Architecture**: Download transcriptome and build Kallisto index once; reuse across unlimited experiments
 
-### Key Features
+###Features
 
  **11-step Bash pipeline** + **24-step R analysis**  
  **Smart 3-level cache system** (FASTQ → SRA → download)  
@@ -58,29 +58,29 @@
 ---
 
 
-## Prerequisites
+##Prerequisites
 
 
 Before running **R-SEQ-Flow**, ensure the following software is installed on your system.
 
-### Operating System
+###Operating System
 
 - Linux (Ubuntu 20.04 or later recommended)
 - Windows users can run the pipeline through Windows Subsystem for Linux (WSL2)
 
-### Programming Languages
+###Programming Languages
 
 - Bash (GNU Bash 5.0 or later)
 - R (version 4.3 or later)
 
-### Required Bioinformatics Software
+###Required Bioinformatics Software
 
 - SRA Toolkit
 - FastQC
 - Fastp
 - Kallisto
 
-### Required R Packages
+###Required R Packages
 
 - DESeq2
 - tximport
@@ -91,13 +91,13 @@ Before running **R-SEQ-Flow**, ensure the following software is installed on you
 - readr
 - dplyr
 
-### Recommended System Requirements
+###Recommended System Requirements
 
 - Multi-core CPU
 - 8 GB RAM minimum (16 GB recommended)
 - At least 20 GB of free disk space
 
-### Installation 
+###Installation 
 
 ```bash
 # 1. Clone repository
@@ -113,9 +113,9 @@ chmod +x R-seq.sh deseq2_analysis.R
 
 ---
 
-## Case Study: RNA-seq Differential Expression Analysis (ASTHMA Dataset)
+##Case Study: RNA-seq Differential Expression Analysis (ASTHMA Dataset)
 
-### ASTHMA Study (6 samples)
+###ASTHMA Study (6 samples)
 
 ```bash
 $ ./R-seq.sh
@@ -129,7 +129,7 @@ TREATED SRA ID(s)  : SRR1039509 SRR1039513 SRR1039517
 Continue to DESeq2 analysis? (yes/no): yes
 ```
 
-### 11-Step Bash Pipeline
+###11-Step Bash Pipeline
 
 1. **Experiment Setup** — Metadata input validation
 2. **Directory Creation** — Smart folder structure with resume detection
@@ -153,7 +153,7 @@ Continue to DESeq2 analysis? (yes/no): yes
 
 ---
 
-## 📂 Output Structure
+##Output Structure
 
 ```
 ASTHMA_EXPERIMENT/
@@ -184,15 +184,15 @@ ASTHMA_EXPERIMENT/
 
 ---
 
-##  Smart Caching & Resumability
+##Smart Caching & Resumability
 
-### 3-Level Cache Architecture
+###3-Level Cache Architecture
 
 **Level 1**: FASTQs cached → Skip all downloads  
 **Level 2**: SRA file cached → Skip SRA download, convert locally  
 **Level 3**: Nothing cached → Download + convert
 
-### Crash Recovery
+###Crash Recovery
 
 ```bash
 # If pipeline crashes at any Step :
@@ -212,7 +212,7 @@ SHARED/
 
 ---
 
-## Case Study Results
+##Case Study Results
 
 **Study**: Airway smooth muscle cells ± dexamethasone  
 **Samples**: 3 control + 3 treated (paired-end, 75bp)  
@@ -226,7 +226,7 @@ Significantly DE genes (padj<0.05): 1,189
   Down-regulated (LFC < -1):      170
 ```
 
-### Top DE Genes
+###Top DE Genes
 ```
 Gene          log2FC   -log10(padj)   Description
 DUSP1          +3.45      89          Dual-specificity phosphatase
@@ -236,7 +236,7 @@ HSPA1A         +2.89      73          Heat shock protein 70
 
 ---
 
-## Configuration
+##Configuration
 
 
 ```bash
@@ -249,7 +249,7 @@ SHARED_DIR="/path/to/shared"  # Adjust to your system
 
 ---
 
-##  Input Format
+##Input Format
 
 **SRA IDs**: Space-separated NCBI SRA run identifiers  
 Example: `SRR1039508 SRR1039512 SRR1039516`
@@ -265,9 +265,9 @@ SRR1039509      treated      /experiment/kallisto_output/SRR1039509/abundance.ts
 
 ---
 
-## Output Interpretation
+##Output Interpretation
 
-### CSV Files
+###CSV Files
 
 **all_genes_DESeq2_results.csv** — All 17,450 genes
 ```csv
@@ -287,7 +287,7 @@ ENSG00000030582,DUSP1,2145.3,3.45,0.142,1.2e-130,2.1e-89
 
 ---
 
-## Methods
+##Methods
 
 **Quantification**: Kallisto v0.48+ (pseudoalignment)  
 **Reference**: GENCODE v29 human transcriptome  
@@ -298,7 +298,7 @@ ENSG00000030582,DUSP1,2145.3,3.45,0.142,1.2e-130,2.1e-89
 
 ---
 
-## Full Documentation
+##Full Documentation
 
 - **[INSTALLATION.md](docs/INSTALLATION.md)** — Detailed setup for all OS
 - **[USAGE.md](docs/USAGE.md)** — Complete examples and customization
@@ -309,14 +309,14 @@ ENSG00000030582,DUSP1,2145.3,3.45,0.142,1.2e-130,2.1e-89
 
 
 
-## License
+##License
 
 **MIT License** — Free for commercial and non-commercial use with attribution.  
 See [LICENSE](LICENSE) file for full details.
 
 ---
 
-## Author
+##Author
 
 **Mr.Abdullah Akram**  
 Department of Bioinformatics and Biotechnology  | Government College University Faisalabad | Faisalabad, 38000, Pakistan 
@@ -326,7 +326,7 @@ Department of Bioinformatics and Biotechnology  | Government College University 
 
 ---
 
-## Related Resources
+##Related Resources
 
 - [NCBI SRA](https://www.ncbi.nlm.nih.gov/sra)
 - [GENCODE](https://www.gencodegenes.org/)
