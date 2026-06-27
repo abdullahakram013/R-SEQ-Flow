@@ -39,9 +39,8 @@
 
 ---
 
-## 🚀 Quick Start
 
-### Prerequisites
+
 <h2><a id="prerequisites"></a>Prerequisites</h2>
 
 Before running **R-SEQ-Flow**, ensure the following software is installed on your system.
