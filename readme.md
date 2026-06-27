@@ -26,16 +26,16 @@
 
 ### Key Features
 
-✅ **11-step Bash pipeline** + **24-step R analysis**  
-✅ **Smart 3-level cache system** (FASTQ → SRA → download)  
-✅ **Per-sample and per-experiment checkpoints** for resumability  
-✅ **Multi-threaded processing** (FastQC, fastp, Kallisto parallelized)  
-✅ **Automatic PE/SE detection** from FASTQ files  
-✅ **Comprehensive error logging** with per-tool logs  
-✅ **Disk-space pre-flight checks**  
-✅ ** Plots generation** (PCA, volcano, heatmaps, MA plot)  
-✅ **Full gene expression matrices** with apeglm LFC shrinkage  
-✅ **Gene lists** (up-regulated, down-regulated, significant)  
+ **11-step Bash pipeline** + **24-step R analysis**  
+ **Smart 3-level cache system** (FASTQ → SRA → download)  
+ **Per-sample and per-experiment checkpoints** for resumability  
+ **Multi-threaded processing** (FastQC, fastp, Kallisto parallelized)  
+ **Automatic PE/SE detection** from FASTQ files  
+ **Comprehensive error logging** with per-tool logs  
+ **Disk-space pre-flight checks**  
+ **Plots generation** (PCA, volcano, heatmaps, MA plot)  
+ **Full gene expression matrices** with apeglm LFC shrinkage  
+ **Gene lists** (up-regulated, down-regulated, significant)  
 
 ---
 
