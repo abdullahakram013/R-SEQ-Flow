@@ -33,7 +33,7 @@
  **Automatic PE/SE detection** from FASTQ files  
  **Comprehensive error logging** with per-tool logs  
  **Disk-space pre-flight checks**  
- **Plots generation** (PCA, volcano, heatmaps, MA plot)  
+ **Plots generation** (PCA, volcano, heatmaps, MA plot, Dispersion)  
  **Full gene expression matrices** with apeglm LFC shrinkage  
  **Gene lists** (up-regulated, down-regulated, significant)  
 
