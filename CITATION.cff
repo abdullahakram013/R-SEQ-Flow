@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use R-SEQ-Flow v3 in your research, please cite it using the information below."
+
+title: "R-SEQ-Flow v3: A RNA-seq Analysis Pipeline for Automated Transcriptomic Analysis and Visualization"
+
+
+
+doi: ""
+
+date-released: "01-07-2026"
+
+repository-code: "https://github.com/abdullahakram013/R-SEQ-Flow"
+
+authors:
+  - family-names: "Akram"
+    given-names: "Abdullah"
+    email: "abdullahakram7652a@gmail.com"
+    
+preferred-citation:
+  type: software
+  authors:
+    - family-names: "Akram"
+      given-names: "Abdullah"
+  title: "R-SEQ-Flow v3: Automated RNA-seq Pipeline from SRA to Differential Expression and Visualization"
+  
+  year: 2026
+  url: "https://github.com/abdullahakram013/R-SEQ-Flow"
+  abstract: >
+    R-SEQ-Flow v3 is a reproducible and modular RNA-seq analysis pipeline that automates
+    data retrieval from SRA, quality control, transcript quantification, differential gene
+    expression analysis, and downstream visualization including PCA, volcano plots,
+    heatmaps, and MA plots.
+
+keywords:
+  - RNA-seq
+  - Bioinformatics Pipeline
+  - Differential Expression
+  - DESeq2
+  - Kallisto
+  - Transcriptomics
+  - Reproducibility
+  - Computational Biology
+
+license: MIT
+
+identifiers:
+  - type: https://github.com/abdullahakram013/R-SEQ-Flow.git
+    value: "https://github.com/abdullahakram013/R-SEQ-Flow"
