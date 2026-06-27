@@ -299,8 +299,8 @@ See [LICENSE](LICENSE) file for full details.
 
 ## Author
 
-**Abdullah Akram**  
-Bioinformatician | GCU Faisalabad | 
+**Mr.Abdullah Akram**  
+Department of Bioinformatics and Biotechnology  | Government College University Faisalabad | Faisalabad, 38000, Pakistan 
 - GitHub: [@abdullahakram013](https://github.com/abdullahakram013)
 - Email: abdullahakram7652a@gmail.com
 
