@@ -1,12 +1,30 @@
 # R-SEQ-Flow v3
+## Production-Grade RNA-seq Pipeline — Automatic Quality Control, Pseudo-Alignment Quantification, Differential Expression Analysis and Results Visualization
 
-> **Production-Grade RNA-seq Pipeline** — Automatic Quality Control, Pseudo-Alignment Quantification, Differential Expression Analysis and Results Visualization
+<p align="left">
+  <a href="#overview">📋 Overview</a> •
+  <a href="#features">⚙️ Features</a> •
+  <a href="#pipeline-architecture">🧬 Pipeline Architecture</a> •
+  <a href="#installation">📦 Installation</a> •
+  <a href="#usage">🚀 Usage</a> •
+  <a href="#outputs">📊 Outputs</a> •
+  <a href="#case-study">🧪 Case Study</a> •
+  <a href="#methods">🔬 Methods</a> •
+  <a href="#license">📜 License</a> •
+  <a href="#author">👤 Author</a>
+</p>
 
-![Status](https://img.shields.io/badge/status-production%20ready-green?style=flat-square)
-![Version](https://img.shields.io/badge/version-3.0.0-blue?style=flat-square)
-![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
-![Language](https://img.shields.io/badge/bash%20%7C%20R-4.5%2B-orange?style=flat-square)
-![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen?style=flat-square)
+---
+
+## Status
+
+![Version](https://img.shields.io/badge/version-v3.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Language](https://img.shields.io/badge/language-R%20%2B%20Bash-orange)
+![Type](https://img.shields.io/badge/pipeline-RNA--seq-red)
+![Maintained](https://img.shields.io/badge/status-active-brightgreen)
+
+---
 
 ---
 
