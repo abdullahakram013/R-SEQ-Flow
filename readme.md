@@ -14,6 +14,7 @@
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
+- [Running R-SEQ-Flow](#running-r-seq-flow)
 - [Smart Caching & Resumability](#smart-caching--resumability)
 - [Case Study Results](#case-study-results)
 - [Output Structure](#output-structure)
@@ -113,6 +114,23 @@ cd R-SEQ-Flow
 chmod +x R-seq.sh deseq2_analysis.R
 
 # 3. Run pipeline
+./R-seq.sh
+```
+---
+
+## Running R-SEQ-Flow
+
+R-SEQ-Flow consists of two main executable files.
+
+| File | Purpose |
+|------|---------|
+| `R-seq.sh` | Main Bash pipeline that performs data download, quality control, trimming, pseudo-alignment, quantification, checkpoint management, and metadata generation. |
+| `deseq2_analysis.R` | Performs downstream differential expression analysis, statistical testing, result export, and visualization using DESeq2. |
+
+### Run the Complete Pipeline
+
+bash
+```
 ./R-seq.sh
 ```
 
