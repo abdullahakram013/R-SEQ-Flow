@@ -22,7 +22,6 @@
 - [Input Format](#input-format)
 - [Output Interpretation](#output-interpretation)
 - [Methods](#methods)
-- [Full Documentation](#full-documentation)
 - [License](#license)
 - [Author](#author)
 - [Related Resources](#related-resources)
@@ -328,16 +327,9 @@ ENSG00000030582,DUSP1,2145.3,3.45,0.142,1.2e-130,2.1e-89
 **Shrinkage**: apeglm (Approximate Posterior Estimation)  
 **QC**: FastQC + fastp  
 
----
-
-## Full Documentation
-
-- **[INSTALLATION.md](docs/INSTALLATION.md)** — Detailed setup for all OS
-- **[USAGE.md](docs/USAGE.md)** — Complete examples and customization
-- **[ARCHITECTURE.md](docs/ARCHITECTURE.md)** — Workflow and step descriptions
 
 
----
+
 
 
 
