@@ -1,20 +1,26 @@
 # R-SEQ-Flow v3
 ## Production-Grade RNA-seq Pipeline — Automatic Quality Control, Pseudo-Alignment Quantification, Differential Expression Analysis and Results Visualization
 
-<p align="left">
-  <a href="#overview">📋 Overview</a> •
-  <a href="#features">⚙️ Features</a> •
-  <a href="#pipeline-architecture">🧬 Pipeline Architecture</a> •
-  <a href="#installation">📦 Installation</a> •
-  <a href="#usage">🚀 Usage</a> •
-  <a href="#outputs">📊 Outputs</a> •
-  <a href="#case-study">🧪 Case Study</a> •
-  <a href="#methods">🔬 Methods</a> •
-  <a href="#license">📜 License</a> •
-  <a href="#author">👤 Author</a>
-</p>
 
 ---
+
+# Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Running Pipeline](#running-pipeline)
+- [Pipeline Steps](#pipeline-steps)
+- [Outputs](#outputs)
+- [Case Study](#case-study)
+- [Methods](#methods)
+- [License](#license)
+- [Author](#author)
+
+---
+
+
 
 ## Status
 
