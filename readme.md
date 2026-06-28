@@ -111,16 +111,28 @@ git clone https://github.com/abdullahakram013/R-SEQ-Flow.git
 cd R-SEQ-Flow
 
 # 2. Make executable
-chmod +x R-seq.sh deseq2_analysis.R
+chmod +x scripts/R-seq.sh
+./scripts/R-seq.sh
 
 # 3. Run pipeline
-./R-seq.sh
+bash scripts/R-seq.sh
 ```
 ---
 
 ## Running R-SEQ-Flow
 
+
+All pipeline scripts are located in the `scripts/` directory.
+
+### Run full pipeline
+
+bash
+```
+chmod +x scripts/R-seq.sh
+./scripts/R-seq.sh
+```
 R-SEQ-Flow consists of two main executable files.
+
 
 | File | Purpose |
 |------|---------|
@@ -131,8 +143,9 @@ R-SEQ-Flow consists of two main executable files.
 
 bash
 ```
-./R-seq.sh
+bash scripts/R-seq.sh
 ```
+
 
 ## Smart Caching & Resumability
 
@@ -146,7 +159,7 @@ bash
 
 ```bash
 # If pipeline crashes at any Step :
-./R-seq.sh
+bash scripts/R-seq.sh
 # Enter same experiment name + SRA IDs
 # Pipeline skips all completed steps (1-9), resumes at Step 10
 ```
@@ -158,7 +171,7 @@ bash
 ### ASTHMA Study (6 samples)
 
 ```bash
-$ ./R-seq.sh
+$ bash scripts/R-seq.sh
 
 Experiment name : ASTHMA_EXPERIMENT
 CONTROL SRA ID(s)  : SRR1039508 SRR1039512 SRR1039516
