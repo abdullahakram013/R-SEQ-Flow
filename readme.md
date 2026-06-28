@@ -1,6 +1,12 @@
 # R-SEQ-Flow v3
 ## Production-Grade RNA-seq Pipeline — Automatic Quality Control, Pseudo-Alignment Quantification, Differential Expression Analysis and Results Visualization
 
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Platform](https://img.shields.io/badge/Linux-Ubuntu-orange)
+![Language](https://img.shields.io/badge/Bash%20%7C%20R-blue)
+![Version](https://img.shields.io/badge/version-v3.0-success)
+![Maintained](https://img.shields.io/badge/Maintained-Yes-brightgreen)
+
 ---
 ## Table of Contents
 
@@ -23,13 +29,7 @@
 - [Related Resources](#related-resources)
 
 
-## Status
 
-![Version](https://img.shields.io/badge/version-v3.0-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Language](https://img.shields.io/badge/language-R%20%2B%20Bash-orange)
-![Type](https://img.shields.io/badge/pipeline-RNA--seq-red)
-![Maintained](https://img.shields.io/badge/status-active-brightgreen)
 
 ---
 
