@@ -1,5 +1,5 @@
 # R-SEQ-Flow v3
-## Production-Grade RNA-seq Pipeline — Automatic Quality Control, Pseudo-Alignment Quantification, Differential Expression Analysis and Results Visualization
+## RNA-seq Pipeline — Automatic Quality Control, Pseudo-Alignment Quantification, Differential Expression Analysis and Results Visualization
 
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Platform](https://img.shields.io/badge/Linux-Ubuntu-orange)
