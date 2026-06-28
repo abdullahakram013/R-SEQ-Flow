@@ -16,7 +16,7 @@
 - [Installation](#installation)
 - [Smart Caching & Resumability](#smart-caching--resumability)
 - [Case Study Results](#case-study-results)
-- [Outputs](#outputs)
+- [Output Structure](#output-structure)
 - [Configuration](#configuration)
 - [Input Format](#input-format)
 - [Output Interpretation](#output-interpretation)
