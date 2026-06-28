@@ -124,13 +124,7 @@ bash scripts/R-seq.sh
 
 All pipeline scripts are located in the `scripts/` directory.
 
-### Run full pipeline
 
-bash
-```
-chmod +x scripts/R-seq.sh
-./scripts/R-seq.sh
-```
 R-SEQ-Flow consists of two main executable files.
 
 
