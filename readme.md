@@ -14,11 +14,9 @@
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Running Pipeline](#running-pipeline)
-- [Pipeline Steps](#pipeline-steps)
-- [Outputs](#outputs)
 - [Smart Caching & Resumability](#smart-caching--resumability)
 - [Case Study Results](#case-study-results)
+- [Outputs](#outputs)
 - [Configuration](#configuration)
 - [Input Format](#input-format)
 - [Output Interpretation](#output-interpretation)
@@ -118,6 +116,23 @@ chmod +x R-seq.sh deseq2_analysis.R
 ./R-seq.sh
 ```
 
+## Smart Caching & Resumability
+
+### 3-Level Cache Architecture
+
+**Level 1**: FASTQs cached → Skip all downloads  
+**Level 2**: SRA file cached → Skip SRA download, convert locally  
+**Level 3**: Nothing cached → Download + convert
+
+### Crash Recovery
+
+```bash
+# If pipeline crashes at any Step :
+./R-seq.sh
+# Enter same experiment name + SRA IDs
+# Pipeline skips all completed steps (1-9), resumes at Step 10
+```
+
 ---
 
 ## Case Study: RNA-seq Differential Expression Analysis (ASTHMA Dataset)
@@ -191,22 +206,7 @@ ASTHMA_EXPERIMENT/
 
 ---
 
-## Smart Caching & Resumability
 
-### 3-Level Cache Architecture
-
-**Level 1**: FASTQs cached → Skip all downloads  
-**Level 2**: SRA file cached → Skip SRA download, convert locally  
-**Level 3**: Nothing cached → Download + convert
-
-### Crash Recovery
-
-```bash
-# If pipeline crashes at any Step :
-./R-seq.sh
-# Enter same experiment name + SRA IDs
-# Pipeline skips all completed steps (1-9), resumes at Step 10
-```
 
 **Shared Directory** (reused across all experiments):
 ```
