@@ -35,7 +35,8 @@
 
 ## Overview
 
-**R-SEQ-Flow** is a complete, **production-ready RNA-seq processing pipeline** that automates the entire workflow from raw sequencing reads (NCBI SRA) to differential expression analysis and results visualization.
+
+** R-SEQ-Flow** is a complete, **RNA-seq processing pipeline** that automates the entire workflow from raw sequencing reads to differential expression analysis and results visualization.
 
 ### What It Does
 
@@ -175,7 +176,7 @@ TREATED SRA ID(s)  : SRR1039509 SRR1039513 SRR1039517
 Continue to DESeq2 analysis? (yes/no): yes
 ```
 
-### 11-Step Bash Pipeline
+### 12-Step Bash Pipeline
 
 1. **Experiment Setup** — Metadata input validation
 2. **Directory Creation** — Smart folder structure with resume detection
@@ -184,10 +185,11 @@ Continue to DESeq2 analysis? (yes/no): yes
 5. **FastQC (raw)** — Pre-trimming quality reports
 6. **Trimming** — fastp adapter removal and QC filtering
 7. **FastQC (trimmed)** — Post-trimming validation
-8. **Reference Download** — GENCODE v29 transcriptome (shared, once-only)
-9. **Kallisto Index** — Build index from transcriptome (shared, once-only)
-10. **Quantification** — Per-sample pseudo-alignment (Kallisto)
-11. **Metadata** — Create DESeq2 sample sheet
+8. **Automatics PE and SE Detection** — From FASTQ files
+9. **Reference Download** — GENCODE v29 transcriptome (shared, once-only)
+10. **Kallisto Index** — Build index from transcriptome (shared, once-only)
+11. **Quantification** — Per-sample pseudo-alignment (Kallisto)
+12. **Metadata** — Create DESeq2 sample sheet
 
 ### 24-Step R Analysis (Optional)
 
@@ -247,7 +249,7 @@ SHARED/
 
 **Study**: Airway smooth muscle cells ± dexamethasone  
 **Samples**: 3 control + 3 treated (paired-end, 75bp)  
-**Runtime**: ~90 minutes (first run), ~2 minutes (resume)
+
 
 ```
 Total genes in reference:       58,721
@@ -320,7 +322,7 @@ ENSG00000030582,DUSP1,2145.3,3.45,0.142,1.2e-130,2.1e-89
 
 ## Methods
 
-**Quantification**: Kallisto v0.48+ (pseudoalignment)  
+**Quantification**: Kallisto v0.46+ (pseudoalignment)  
 **Reference**: GENCODE v29 human transcriptome  
 **Normalization**: DESeq2 size-factor estimation  
 **Testing**: Wald test with Benjamini-Hochberg FDR correction  
@@ -342,23 +344,16 @@ See [LICENSE](LICENSE) file for full details.
 
 ## Author
 
-**Mr.Abdullah Akram**  
-Department of Bioinformatics and Biotechnology  | Government College University Faisalabad | Faisalabad, 38000, Pakistan 
+**Mr.Abdullah Akram**   
 - GitHub: [@abdullahakram013](https://github.com/abdullahakram013)
 - Email: abdullahakram7652a@gmail.com
+- Department of Bioinformatics and Biotechnology  | Government College University Faisalabad | Faisalabad, 38000, Pakistan
 
 
 ---
 
-## Related Resources
 
-- [NCBI SRA](https://www.ncbi.nlm.nih.gov/sra)
-- [GENCODE](https://www.gencodegenes.org/)
-- [Kallisto](https://pachterlab.github.io/kallisto/)
-- [DESeq2](http://bioconductor.org/packages/release/bioc/html/DESeq2.html)
-- [tximport](https://bioconductor.org/packages/release/bioc/html/tximport.html)
 
----
 
 
 
